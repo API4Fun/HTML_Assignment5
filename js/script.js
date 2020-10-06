@@ -82,8 +82,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // Explicitly setting the flag to get JSON from server processed into an object literal
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  allCategoriesUrl,
-  buildAndShowHomeHTML,
+  allCategoriesUrl, buildAndShowHomeHTML,
   true);
 });
 // *** finish **
@@ -138,8 +137,7 @@ function chooseRandomCategory (categories) {
 dc.loadMenuCategories = function () {
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
-    allCategoriesUrl,
-    buildAndShowCategoriesHTML);
+    allCategoriesUrl, buildAndShowCategoriesHTML);
 };
 
 // Load the menu items view
